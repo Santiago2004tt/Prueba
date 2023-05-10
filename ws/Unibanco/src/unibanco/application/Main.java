@@ -224,6 +224,16 @@ public class Main extends Application {
         }
     }
 
+    //-------------------------------------------PRUEBA ASHE--------------------------------------------
+    public int ImprimirMiguel(int i) {
+        for ( i = 0; i <=100 ; i++) {
+            System.out.println("los numeros son: " + i);
+        }
+        return i;
+    }
+
+    //----------------------------------------------------------------------------------------------------
+
         //--------------------------------Mas_Metodos---------------------------------------------
     public boolean verificarCuenta(String cedula, String numCuenta) {
         return banco.verificarCuenta(cedula, numCuenta);
