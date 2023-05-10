@@ -27,6 +27,16 @@ public class Main extends Application {
 
     Banco banco = new Banco("Unibanco", "123");
 
+    public double imprimirHuendy(){
+        int a = 0;
+        int b = 0;
+        double resultado = 0;
+        if(a>0 && b>0){
+           resultado = (Math.sqrt(Math.pow(a,2) + Math.pow(b,2)));
+        }
+        return resultado;
+    }
+
     public void start(Stage stage) throws Exception{
         /*
         inicializa el fxml
