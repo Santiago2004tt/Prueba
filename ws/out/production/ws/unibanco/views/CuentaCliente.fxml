@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unibanco.controllers.CuentaClienteController">
+   <children>
+      <Label layoutX="30.0" layoutY="21.0" prefHeight="47.0" prefWidth="159.0" text="Unibanco " textFill="#9917cd">
+         <font>
+            <Font name="Gummy Bears" size="39.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.6940298507462687" layoutX="1.0" layoutY="129.0" orientation="VERTICAL" prefHeight="270.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="603.0">
+               <children>
+                  <Label fx:id="totalSaldo" alignment="CENTER" layoutX="35.0" layoutY="62.0" prefHeight="104.0" prefWidth="348.0" text="saldo" textAlignment="CENTER">
+                     <font>
+                        <Font name="Gummy Bears" size="34.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="22.0" prefHeight="31.0" prefWidth="219.0" text="Cuenta ahorro" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Berlin Sans FB" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="Inicio" layoutX="43.0" layoutY="21.0" mnemonicParsing="false" onAction="#volverInicio" prefHeight="37.0" prefWidth="69.0" text="Inicio" textFill="#b028b0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="transacciones" layoutX="238.0" layoutY="21.0" mnemonicParsing="false" onAction="#listTransaccion" prefHeight="37.0" prefWidth="116.0" text="Transacciones" textFill="#b028b0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="miCuenta" layoutX="462.0" layoutY="21.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" text="Mi cuenta" textFill="#b028b0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Separator layoutX="-1.0" layoutY="76.0" prefHeight="4.0" prefWidth="601.0" />
+      <Label fx:id="bienvenidaLabel" layoutX="30.0" layoutY="76.0" prefHeight="49.0" prefWidth="173.0" text="Hola, Huendy &lt;" textFill="#5a1279">
+         <font>
+            <Font name="Gummy Bears" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="volverLogin" layoutX="430.0" layoutY="20.0" mnemonicParsing="false" onAction="#volverLog" prefHeight="37.0" prefWidth="159.0" text="Cerrar Sesión" textFill="#b028b0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

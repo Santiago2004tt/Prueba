@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="491.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unibanco.controllers.TareasAdminController">
+   <children>
+      <TableView fx:id="clientesTable" layoutX="189.0" layoutY="94.0" prefHeight="347.0" prefWidth="505.0">
+         <columns>
+            <TableColumn fx:id="nombreClienteColum" prefWidth="102.0" text="Nombre " />
+            <TableColumn fx:id="apellidosClienteColum" prefWidth="98.0" text="Apellidos" />
+            <TableColumn fx:id="cedulaClienteColum" prefWidth="96.0" text="Cedula" />
+            <TableColumn fx:id="correoClienteColum" prefWidth="98.0" text="Correo" />
+            <TableColumn fx:id="direccionClienteColum" prefWidth="111.0" text="Dirección" />
+         </columns>
+      </TableView>
+      <Button fx:id="crearClienteButton" layoutX="64.0" layoutY="94.0" mnemonicParsing="false" onAction="#crearcliente" text="Crear" textFill="#b028b0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="eliminarClienteButton" layoutX="56.0" layoutY="252.0" mnemonicParsing="false" onAction="#eliminarCliente" text="Eliminar" textFill="#b028b0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="actualizarClienteButton" layoutX="51.0" layoutY="174.0" mnemonicParsing="false" onAction="#actualizarCliente" text="actualizar" textFill="#b028b0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cerrarTareasButton" layoutX="62.0" layoutY="410.0" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" textFill="#b028b0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="245.0" layoutY="25.0" text="Tareas Admin" textFill="#9917cd">
+         <font>
+            <Font name="Gummy Bears" size="39.0" />
+         </font>
+      </Label>
+      <Separator layoutX="2.0" layoutY="71.0" prefHeight="3.0" prefWidth="708.0" />
+      <Separator layoutX="157.0" layoutY="71.0" orientation="VERTICAL" prefHeight="421.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>
